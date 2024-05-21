@@ -1,0 +1,28 @@
+<nav #navbar class="navbar-transparent">
+    <div class="logo" routerLink="/pokemon">
+      <img srcset="assets/img/International_Pokemon_logo.png" alt="logo" />
+    </div>
+    <ul>
+      <li>
+        <a href="/pokemon">Home</a>
+      </li>
+      <li>
+        <a href="/pokemon/category">Pokémon</a>
+      </li>
+    </ul>
+    <div class="hamburger" [class.hamburger-active]="isHamburgerActive" (click)="toggleNav()">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </nav>
+  <div class="menubar" [class.active]="isNavbarActive">
+    <ul>
+      <li>
+        <a href="/pokemon">Home</a>
+      </li>
+      <li>
+        <a href="/pokemon/category">Pokémon</a>
+      </li>
+    </ul>
+  </div>

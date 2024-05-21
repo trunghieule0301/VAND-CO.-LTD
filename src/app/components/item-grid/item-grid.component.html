@@ -1,0 +1,6 @@
+<div class="item-grid">
+    <div *ngFor="let pokemon of pokemonInfoList" class="item">
+        <app-card-item [pokemon]="pokemon" [types]="types"
+            [spriteById]="spriteById"></app-card-item>
+    </div>
+</div>

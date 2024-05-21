@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="details">
+        <div class="cardHeader">{{ pokemon?.name }}</div>
+        <div class="cardText">
+            <p class="hp">
+                <span>HP</span>
+                {{ pokemon?.hp }}
+            </p>
+            <!-- <img [src]="pokemon?.imgSrc" *ngIf="pokemon?.imgSrc" /> -->
+            <!-- <div class="types">
+                <span *ngFor="let type of pokemon?.types" [ngStyle]="{'background-color': themeColor}">{{ type }}</span>
+            </div> -->
+            <div class="stats">
+                <div>
+                    <h3>{{ pokemon?.attack }}</h3>
+                    <p>Attack</p>
+                </div>
+                <div>
+                    <h3>{{ pokemon?.defense }}</h3>
+                    <p>Defense</p>
+                </div>
+                <div>
+                    <h3>{{ pokemon?.speed }}</h3>
+                    <p>Speed</p>
+                </div>
+                <div>
+                    <h3>{{ pokemon?.attack }}</h3>
+                    <p>SP. Attack</p>
+                </div>
+                <div>
+                    <h3>{{ pokemon?.defense }}</h3>
+                    <p>SP. Defense</p>
+                </div>
+            </div>
+
+        </div>
+        <button appCustomButton="button" (click)="openPopup()">
+            <span>Show more</span>
+        </button>
+    </div>
+</div>

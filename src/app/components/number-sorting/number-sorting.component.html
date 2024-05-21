@@ -1,0 +1,6 @@
+<div class="sorting">
+    <!-- <label for="sort">Sort by:</label> -->
+    <select id="sort" (change)="onSortChange($event)">
+        <option *ngFor="let option of sortOptions" [selected]="selectedNumberSort == option.type" [value]="option.type">{{ option.name }}</option>
+    </select>
+</div>

@@ -1,0 +1,8 @@
+<div class="filters">
+    <h3>Filters</h3>
+    <ul>
+        <li *ngFor="let category of categories; index as idx" (click)="onFilterChange(category)" [class.selected]="selectedFilter == idx">
+            {{ category.name }}
+        </li>
+    </ul>
+</div>

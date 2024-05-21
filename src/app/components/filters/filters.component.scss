@@ -1,0 +1,17 @@
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filters li {
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.selected{
+    font-weight: 700;
+}

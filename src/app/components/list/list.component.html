@@ -1,0 +1,11 @@
+<div class="cards">
+    <div *ngFor="let pokemon of pokemonInfoList" class="card">
+        <app-card-item [pokemon]="pokemon" [types]="types"
+            [spriteById]="spriteById"></app-card-item>
+    </div>
+</div>
+<div class="container">
+    <button appCustomButton="button" [routerLink]="'category'">
+        <span>Show more</span>
+    </button>
+</div>

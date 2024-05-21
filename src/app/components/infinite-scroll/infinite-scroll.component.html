@@ -1,0 +1,10 @@
+<app-item-grid [pokemonInfoList]="items"></app-item-grid>
+
+<div class="button_container">
+    <button appCustomButton="button" (click)="loadMore()">
+        <span>Show more</span>
+    </button>
+</div>
+
+
+<div class="loading" *ngIf="loading">Loading...</div>

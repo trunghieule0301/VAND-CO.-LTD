@@ -1,0 +1,47 @@
+<div class="popup-overlay">
+    <div class="popup-content">
+
+        <div class="card">
+            <button class="dismiss" type="button" (click)="close()">×</button>
+            <div class="header">
+                <div class="card-header">
+                    <img [src]="pokemonSprite" alt="Pokemon Image" class="pokemon-image">
+                </div>
+                <div class="card-body">
+                    <h2 class="pokemon-name">{{information?.name}}</h2>
+                    <p class="pokemon-type">Type: {{ information?.type_1_name + (information?.type_2_name ? ', ' + information?.type_2_name : '') }}</p>
+
+                    <div class="stats">
+                        <div>
+                            <h3>{{ information?.attack }}</h3>
+                            <p>Attack</p>
+                        </div>
+                        <div>
+                            <h3>{{ information?.defense }}</h3>
+                            <p>Defense</p>
+                        </div>
+                        <div>
+                            <h3>{{ information?.speed }}</h3>
+                            <p>Speed</p>
+                        </div>
+                        <div>
+                            <h3>{{ information?.attack }}</h3>
+                            <p>SP. Attack</p>
+                        </div>
+                        <div>
+                            <h3>{{ information?.defense }}</h3>
+                            <p>SP. Defense</p>
+                        </div>
+                    </div>
+
+                    <p class="pokemon-description">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu is famous
+                        for being the most well-known and recognizable Pokémon.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <ng-content></ng-content>
+
+    </div>
+</div>
